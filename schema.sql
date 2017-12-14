@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS me_tooDB;
+CREATE DATABASE me_tooDB;
+
+USE me_tooDB;
+
+CREATE TABLE forum(
+  id INT AUTO_INCREMENT NOT NULL,
+  username VARCHAR(30) NOT NULL,
+  post VARCHAR(200) NOT NULL,
+  shared_location VARCHAR(200) NULL,
+  approved BOOLEAN NOT NULL DEFAULT 0,
+  primary key(id)
+);
