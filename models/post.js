@@ -17,7 +17,9 @@ module.exports = function(sequelize, DataTypes) {
     body: {
       type: DataTypes.TEXT,
       allowNull: false,
+      validate: {
       len: [1,500]
+      }
     },
     approved: {
       type: DataTypes.BOOLEAN,
@@ -26,6 +28,15 @@ module.exports = function(sequelize, DataTypes) {
 
 
   });
+    Post.associate = function(models) {
+    Post.belongsTo(models.User, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
+
 return Post;
+
 };
 
