@@ -29,9 +29,10 @@ var title = dummyData[i].title
 var user_id = dummyData[i].user_id
 
 // create the links using the a href tags
-$('#posts').append("<div class='postTitles' id="+user_id+"><"+title+"</div>");	
+$('#posts').append("<div class='postTitles' id="+user_id+"><"+title+"></div>");	
 
 }
+
 // this is for the post page.
 // I need to find the post id in my array of post and render it to the post.html page. Go over the array and find the id of that was selected. I will not need a for loop for this. I need to refer to past lessons for help with this code.
 
