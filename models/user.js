@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
 
           beforeUpdate: (user) => {
             if (user._changed.password) {
-              return bcrypt.compareSync(password, user.password);
+              user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(8));
             }
           }
         }
