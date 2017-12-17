@@ -1,10 +1,45 @@
+img {
+    border: 0;
+    width: 100%;
+}
+/**/
+#aboutContainer {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.row .col.s4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.row .col {
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+}
 .nav-wrapper{
 margin-top:5px;
 background-color: #423d77 !important;
 padding-right:100px;
 
-
 }
+
+
+#home-background {
+background: url("../images/me 2.png");
+background-size: contain;
+background-size: cover;
+background-repeat: no-repeat; 
+background-position: 100% 100%; 
+}
+
 
 #map-heading{
 
@@ -14,9 +49,9 @@ text-align: center;
 
 #meToo{
 
-	text-align:center;
-	margin-bottom:-10px;
-	
+    text-align:center;
+    margin-bottom:-20px;
+    
 }
 
 #map-img{
@@ -32,17 +67,27 @@ margin: auto;
 
 #about{
 float:right;
-margin-top:650px;
-margin-right:100px;
+margin-top:550px;
+margin-right:75px;
 width:200px;
 font-size:30px;
+background-color: rgba(0, 0, 0, 0);
+ 
 }
 
+#enter{
+float:right;
+margin-top:550px;
+margin-left:150px;
+width:200px;
+font-size:30px;
+background-color: rgba(0, 0, 0, 0);
+}
 
 #tarana{
 
-	width:100%;
-	float:right;
+    width:100%;
+    float:right;
 }
 
 #pgGreeting{
@@ -76,14 +121,6 @@ border:1px solid #ddd;
 text-align:center;
 font-weight:bold;
 font-size:20px;
-
-}
-
-
-.description{
-font-size:15px;
-text-align:left;
-font-weight:normal;
 
 }
 
