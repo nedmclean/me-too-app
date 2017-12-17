@@ -28,8 +28,6 @@ description:"Be your best...do your best."
 
 ];
 
-// table two will be used to 
-
 
 // This code renders the titles to the start.html page
 for(var i = 0; i < dummyData.length; i++){
@@ -50,7 +48,7 @@ for(var j = 0; j < dummyData.length; j++){
 
 var title = dummyData[j].title
 var user_id = dummyData[j].user_id
-var body = dummyData[j].post
+var body = dummyData[j].body
 
 // name the class of this div and place it in the append
 
