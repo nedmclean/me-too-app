@@ -5,14 +5,14 @@ module.exports = {
     return queryInterface.bulkInsert('Posts', [{
       username: "Sabrina",
       body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsum",
-      ForumId: 1,
+      // ForumId: 1,
       location: "nwiofnosfn",
       createdAt: Sequelize.fn(('NOW')),
       updatedAt: Sequelize.fn(('NOW'))
     }, {
       username: "Catherine",
       body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsum",
-      ForumId: 1,
+      // ForumId: 1,
       location: "nwiofnosfn",
       createdAt: Sequelize.fn(('NOW')),
       updatedAt: Sequelize.fn(('NOW'))

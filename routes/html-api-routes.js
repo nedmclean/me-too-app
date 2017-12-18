@@ -19,9 +19,10 @@ module.exports = function(app) {
   });
 
   // cms route loads cms.html
-  app.get("/post", function(req, res) {
+  app.get("/post/:id", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/post.html"));
   });
+
   
 
   // blog route loads blog.html
