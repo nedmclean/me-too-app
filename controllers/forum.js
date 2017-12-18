@@ -32,5 +32,16 @@ module.exports = {
     .catch(error => {
       console.log(error)
     })
+  },
+
+  getAllForum(req, res) {
+    return Forum
+    .all()
+    .then(forums => {
+      res.status(200).send(forums)
+    })
+    .catch(error => {
+      console.log(error)
+    })
   }
 }

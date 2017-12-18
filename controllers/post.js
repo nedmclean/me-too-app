@@ -51,5 +51,16 @@ module.exports = {
     .catch(error => {
       console.log(error)
     })
-  }
+  },
+
+    getAllPost(req, res) {
+      return Post
+      .all()
+      .then(posts => {
+        res.status(200).send(posts)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+    }
 }
