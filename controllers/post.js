@@ -62,5 +62,16 @@ module.exports = {
       .catch(error => {
         console.log(error)
       })
-    }
+    },
+    getPostById(req, res) {
+      return Post
+      .findById(req.params.id)
+      .then(post => {    
+          res.status(200).send({
+            post
+          })
+        })
+      }
+    
 }
+

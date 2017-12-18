@@ -11,26 +11,41 @@ function getPosts(category) {
 
  $.ajax({
       method: "GET",
-      url: "/forum/"
+      url: "/posts/"
     })
-    .done(function(data) {
-    	console.log(data);
+    .done(function(posts) {
     
-    });
+    console.log(posts);
+
+
+
+for(var i = 0; i < posts.length; i++){
+
+var username = posts[i].username;
+var body = posts[i].body;
+var id = posts[i].id;
+
+// create the links using the a href tags
+$('#posts').prepend("<div class='postTitles' id="+username+"><a href = '/post/"+id+ "'></href><p class='description'>"+body+"</p></div>");	
+	
+	};
+ });
+
 
   };
 getPosts();
+
+
+
 });
 
+// $(document).on('click', '.postTitles', function(){
 
-// for(var i = 0; i < posts.length; i++){
+// 	var $this = $(this).attr("id")
 
-// var title = posts[i].title;
-// var user_id = posts[i].id;
-// var description = posts[i].description;
+// 	window.location.href = "post.html"
+// })
 
-// // create the links using the a href tags
-// $('#posts').prepend("<div class='postTitles' id="+user_id+">"+title+"<p class='description'>"+description+"</p></div>");	
 
 // }
 
@@ -52,12 +67,5 @@ getPosts();
 
 // }
 
-// $(document).on('click', '.postTitles', function(){
-
-// 	var $this = $(this).attr("id")
-
-// 	window.location.href = "post.html"
-// 	// console.log($this);
-// })
 
 

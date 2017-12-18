@@ -15,6 +15,7 @@ module.exports = (app) => {
 // post controllers
   app.post('/post', postController.createPost)
   app.put('/post/:id', postController.updatePost)
+  app.get('/getPostById/:id', postController.getPostById)
   app.get('/posts', postController.getAllPost)
   app.delete('/post/:id', postController.deletePost)
 
