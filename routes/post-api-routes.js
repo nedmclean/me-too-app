@@ -1,30 +1,26 @@
 var controller = require('../controllers');
 var userController = controller.user
 var postController = controller.post
+var forumController = controller.forum
 
 module.exports = (app) => {
+  // users controllers
   app.post('/users', userController.createUser)
   app.get('/users', userController.getAllUser)
   app.post('/login', userController.login)
-  app.post('/post', postController.createPost )
+
+  app.put('/users/:id', userController.updateUser)
+  app.delete('/user/:id', userController.deleteUser)
+
+// post controllers
+  app.post('/post', postController.createPost)
+  app.put('/post/:id', postController.updatePost)
+  app.delete('/post/:id', postController.deletePost)
+
+// forum controllers
+  app.post('/forum', forumController.createForum)
+  app.delete('/forum/:id', forumController.deleteForum) 
 }
 
-// var postTitle={
-	
-// 	id:100,
-// 	title:"",
-// 	description:""
-
-// }
-
-// var userPost={
-// 	titleId:100,
-// 	name: "",
-// 	post:""
-// }
-
-// var name = req.username;
-// var postTitle = req.title;
-// var describe = req.description
-
-// for(var i = 0; i<)
+  app.post('/post', postController.createPost )
+}

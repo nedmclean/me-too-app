@@ -51,5 +51,46 @@ module.exports = {
         }) }
     })
     
+  },
+
+  updateUser(req, res) {
+    return User
+    .findById(req.params.id)
+    .then(user => {
+      if (user) {
+        return user
+        .update(req.body)
+        .then(() => {
+          res.status(200).send(user)
+        })
+      }
+      else {
+        return res.status(404).send({
+          message: "user not found"
+        })
+      }
+    })
+  },
+  deleteUser(req, res){
+    return User
+    .findById(req.params.id)
+    .then(user => {
+      if (user) {
+        return user
+        .destroy()
+        .then(()=> {
+          res.status(200).send({
+            message: "user deleted"
+          })
+        })
+      }else {
+        res.status(404).send({
+          message: "user not found"
+        })
+      }
+    })
+    .catch(error => {
+      console.log(error)
+    })
   }
 }

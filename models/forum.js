@@ -1,5 +1,4 @@
 // all the forum types
-
 'use strict';
 module.exports = (sequelize, DataTypes) => {
     var Forum = sequelize.define('Forum', {

@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>MeToo/start</title>
- <!-- Compiled and minified CSS -->
+
+  <title>Me Too</title>
+  <!-- Compiled and minified CSS -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 
   <!-- Compiled and minified JavaScript -->
- <!--  -->
-  
-</head>
-<body>
-  <h1 id = "meToo">#MeToo</h1>
+  <!--  -->
 
-<nav>
+</head>
+
+<body>
+  <h1 id="meToo">#MeToo</h1>
+
+  <nav>
     <div class="nav-wrapper">
 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li class = "description" ><a href="about.html">about</a></li>
-        <li class = "description"><a href="start.html">forums</a></li>
-        
+        <li class="description">
+          <a href="about.html">about</a>
+        </li>
+        <li class="description">
+          <a href="start.html">forums</a>
+        </li>
+
       </ul>
     </div>
-</nav>
+  </nav>
 
-<body>
+  <body>
 
-<div class = "container">
+    <div class="container">
 
-  <div class="row">
-    
-    <div id="pgGreeting" class="col s12">
-      
-      <h3>There is Strength in Community.</h3>
-      <p>Find a forum that speaks to you and make your contribution to the discussion.</p>
+      <div class="row">
 
+        <div id="pgGreeting" class="col s12">
+
+          <h3>There is Strength in Community.</h3>
+          <p>Find a forum that speaks to you and make your contribution to the discussion.</p>
+
+        </div>
+
+
+      </div>
+      <!-- resource Div -->
+      <div class="row">
+
+        <div id="resources" class="col s2">
+          <h6>
+            <strong>resources</strong>
+          </h6>
+
+          <a href="https://www.projectcallisto.org/" target="_blank">Combat sexual assault</a>
+          <hr>
+          <a href="https://www.w3schools.com/html/" target="_blank">Name of Website</a>
+          <hr>
+          <a href="https://www.w3schools.com/html/" target="_blank">Name of Website</a>
+          <hr>
+          <a href="https://www.w3schools.com/html/" target="_blank">Name of Website</a>
+          <hr>
+          <a href="https://www.w3schools.com/html/" target="_blank">Name of Website</a>
+
+        </div>
+
+        <!-- Posts Div -->
+
+        <div id="posts" class="col s5">
+          <!-- This div is dynamically populating. Currently being populated using dummyData from frontend.js -->
+          <!-- <div id ="title">Title</div> -->
+        </div>
+
+        <!-- Map Div -->
+
+        <div id="map" class="col s5">
+          <img id="map-img" class="responsive-img" src="assets/images/map.jpg">
+          <h6>Watch as your community of support grows!</h6>
+          <a class="waves-effect waves-light btn">Add Your Community (By Region Only)</a>
+        </div>
+
+      </div>
     </div>
 
+    <!-- jquery Connections -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
-  </div>
-     <!-- resource Div -->
-  <div class ="row">
-
-      <div id="resources" class="col s2">
-        <h6><strong>resources</strong></h6>
-
-        <a href="https://www.projectcallisto.org/" target="_blank">Combat sexual assault</a>
-        <hr>
-        <a href="https://www.w3schools.com/html/" target="_blank">Name of Website</a>
-        <hr>
-        <a href="https://www.w3schools.com/html/" target="_blank">Name of Website</a>
-        <hr>
-        <a href="https://www.w3schools.com/html/" target="_blank">Name of Website</a>
-        <hr>
-        <a href="https://www.w3schools.com/html/" target="_blank">Name of Website</a>
-        
-      </div>
-
-<!-- Posts Div -->
-
-      <div id="posts" class="col s5">
-        <!-- This div is dynamically populating. Currently being populated using dummyData from frontend.js -->
-        <!-- <div id ="title">Title</div> -->
-      </div>
-
-<!-- Map Div -->
-
-      <div id="map" class="col s5">
-         <img id = "map-img" class="responsive-img" src="assets/images/map.jpg">
-         <h6>Watch as your community of support grows!</h6>
-        <a  class="waves-effect waves-light btn">Add Your Community (By Region Only)</a>
-      </div>
-
-	</div>
-</div>
-
-<!-- jquery Connections -->
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 
-<script type="text/javascript" src = "assets/js/frontend.js"></script>
-</body>
+    <script type="text/javascript" src="assets/js/frontend.js"></script>
+  </body>
+
 </html>
 
 <!-- ('#posts').append("<div class='posts' id="+user_id+"><"+title+"</div>"); -->
