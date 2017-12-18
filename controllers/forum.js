@@ -10,6 +10,7 @@ module.exports = {
     
     })
   },
+  
   deleteForum(req, res){
     return Forum
     .findById(req.params.id)
