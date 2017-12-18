@@ -8,6 +8,7 @@ module.exports = (app) => {
   app.post('/users', userController.createUser)
   app.get('/users', userController.getAllUser)
   app.post('/login', userController.login)
+
   app.put('/users/:id', userController.updateUser)
   app.delete('/user/:id', userController.deleteUser)
 
@@ -22,4 +23,6 @@ module.exports = (app) => {
   app.get('/forum', forumController.getAllForum)
   app.delete('/forum/:id', forumController.deleteForum) 
 }
- 
+
+  app.post('/post', postController.createPost )
+}
