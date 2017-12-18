@@ -13,28 +13,13 @@ module.exports = (sequelize, DataTypes) => {
       }
     
   },  
-    title: {
-      type: DataTypes.STRING,
-      allownull: false,
-      len: {
-        args: [1,100]
-      }
-    },
-    desription: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      len: {
-        args: [1, 500],
-        msg: 'Maximum of 500 characters'
-      }
-    },
     body: {
       type: DataTypes.STRING,
     allowNull: false,
     validate: {
       len: {
         args: [1, 500],
-        msg: 'Maximum of 500 characters'
+        msg: 'Must have maximum of 500 characters'
       }
     }
   }, 
