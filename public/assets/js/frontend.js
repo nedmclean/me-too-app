@@ -1,33 +1,3 @@
-// table One (below) is used for the manager to post a forum. Data is displayed below.
-
-var dummyData = [
-{
-user_id: 100,
-username:"string",
-title: "Moving Forward...Past the Pain",
-body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate unde animi nam, quidem maiores mollitia veniam doloribus optio rem deleniti? Corporis aspernatur ex soluta similique, iusto laudantium illum assumenda nihil.",
-description:"people are in need of understanding. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem at quisquam ut, ex inventore ipsa. "
-},
-
-
-{
-user_id: 101,
-username:"string",
-title: "A Bright Future is Ahead",
-body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate unde animi nam, quidem maiores mollitia veniam doloribus optio rem deleniti? Corporis aspernatur ex soluta similique, iusto laudantium illum assumenda nihil.",
-description:"Lorem ipsum dolor sit amet"
-},
-
-{
-user_id: 102,
-username:"string",
-title: "One day at a Time",
-body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate unde animi nam, quidem maiores mollitia veniam doloribus optio rem deleniti? Corporis aspernatur ex soluta similique, iusto laudantium illum assumenda nihil.",
-description:"Be your best...do your best."
-}
-
-];
-
 
 // This code renders the titles to the start.html page
 for(var i = 0; i < dummyData.length; i++){
@@ -59,20 +29,9 @@ $('#fullPost').append("<div id='titlePost' id="+user_id+">"+title+"</div><div cl
 $(document).on('click', '.postTitles', function(){
 
 	var $this = $(this).attr("id")
-	console.log($this);
+
+	window.location.href = "post.html"
+	// console.log($this);
 })
-
-
-
-
-// code for the button for the introduction page
-$("#about").on("click", function(){
-
-window.location.href = "about.html"
-
-});
-
-// code for the geocoder button
-
 
 

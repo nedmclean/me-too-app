@@ -20,10 +20,10 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// this may need to be public. Attempting to fix routes now.
+
 app.use(express.static("public"));
 
-// require("./routes/html-api-routes")(app);
+require("./routes/html-api-routes")(app);
 require("./routes/post-api-routes")(app);
 // require("./manage-post-api-routes")(app);
 
