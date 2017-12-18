@@ -17,12 +17,13 @@ module.exports = (app) => {
   app.put('/post/:id', postController.updatePost)
   app.get('/posts', postController.getAllPost)
   app.delete('/post/:id', postController.deletePost)
+  app.get('postall/:id', postController.getAllPostByForum)
 
 // forum controllers
   app.post('/forum', forumController.createForum)
   app.get('/forum', forumController.getAllForum)
   app.delete('/forum/:id', forumController.deleteForum) 
-}
+
 
   app.post('/post', postController.createPost )
 }

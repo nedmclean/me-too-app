@@ -62,5 +62,20 @@ module.exports = {
       .catch(error => {
         console.log(error)
       })
-    }
+    },
+
+    getAllPostByForum(req, res){
+      return Post
+      .findAll({
+        where: {
+          ForumId: req.params.ForumId
+        }
+      })
+      .then(posts => {
+          res.status(200).send(posts)
+        })
+      .catch(error => {
+        console.log(error)
+      })
+    },
 }
