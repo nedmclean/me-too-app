@@ -20,7 +20,7 @@ module.exports = (app) => {
 // forum controllers
   app.post('/forum', forumController.createForum)
   app.delete('/forum/:id', forumController.deleteForum) 
-}
+
 
   app.post('/post', postController.createPost )
 }
