@@ -74,6 +74,14 @@ window.location.href = "about.html"
 
 });
 
+// code for the "enter" button to the right of the "about" button on the home page
+
+$("#enter").on("click", function(){
+	
+window.location.href = "start.html"	
+
+});
+
 // code for the geocoder button
 
 
