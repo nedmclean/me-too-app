@@ -18,6 +18,7 @@
     "database": "mkha05f3fve9vm88",
     "username": "utx5m3h1fljzs4wv",
     "password": "tcv8ub5j5xed5s6r",
+    "host": "ol5tz0yvwp930510.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
