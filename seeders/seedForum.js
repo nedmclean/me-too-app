@@ -3,11 +3,11 @@ module.exports = {
       // Add altering commands here.
       // Return a promise to correctly handle asynchronicity.
     return queryInterface.bulkInsert('Forums', [{
-      name: "Bright future",
+      title: "Bright future",
       createdAt: Sequelize.fn(('NOW')),
       updatedAt: Sequelize.fn(('NOW'))
     }, {
-      name: "We are here together",
+      title: "We are here together",
       createdAt: Sequelize.fn(('NOW')),
       updatedAt: Sequelize.fn(('NOW'))
     }], {});

@@ -27,6 +27,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/post.html"));
   });
 
+
   app.get("/share", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/post_form.html"));
   });
