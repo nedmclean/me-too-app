@@ -10,6 +10,7 @@ module.exports = {
     
     })
   },
+  
   deleteForum(req, res){
     return Forum
     .findById(req.params.id)
@@ -27,6 +28,17 @@ module.exports = {
           message: "forum not found"
         })
       }
+    })
+    .catch(error => {
+      console.log(error)
+    })
+  },
+
+  getAllForum(req, res) {
+    return Forum
+    .all()
+    .then(forums => {
+      res.status(200).send(forums)
     })
     .catch(error => {
       console.log(error)
