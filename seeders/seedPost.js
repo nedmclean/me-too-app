@@ -4,16 +4,16 @@ module.exports = {
       // Return a promise to correctly handle asynchronicity.
     return queryInterface.bulkInsert('Posts', [{
       username: "Sabrina",
-      body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      body: "Peace of Mind is My Priority",
       // ForumId: 1,
-      location: "nwiofnosfn",
+      location: "Memphis",
       createdAt: Sequelize.fn(('NOW')),
       updatedAt: Sequelize.fn(('NOW'))
     }, {
       username: "Catherine",
-      body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      body: "Saying No and Meaning It.",
       // ForumId: 1,
-      location: "nwiofnosfn",
+      location: "France",
       createdAt: Sequelize.fn(('NOW')),
       updatedAt: Sequelize.fn(('NOW'))
     }], {});
