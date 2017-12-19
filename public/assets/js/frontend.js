@@ -15,11 +15,12 @@ function getPosts(category) {
     })
     .done(function(posts) {
     
-    console.log(posts);
+    console.log(posts, "hey you");
 
 
 
 for(var i = 0; i < posts.length; i++){
+
 
 var username = posts[i].username;
 var body = posts[i].body;
@@ -34,6 +35,24 @@ $('#posts').prepend("<div class='postTitles' id="+username+"><a href = '/post/"+
 
   };
 getPosts();
+function getForumPost() {
+  alert("I was called")
+}
+
+function getForum() {
+  $.ajax({
+    method: "GET",
+    url: "/forum/",
+  })
+  .done(function(forums) {
+    for (var i = 0; i<forums.length; i++) {
+      $("#forum").append("<div class ='forumTitles' onclick=getForumPost()>" + forums[i].title+ "</div>")
+
+    }
+  })
+}
+getForum()
+
 
 
 
