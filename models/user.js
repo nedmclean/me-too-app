@@ -8,19 +8,19 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
             unique: true,
-            validate: {
-                len: {
-                    args: [3, 30],
-                    msg: 'Display name must be between 3 and 30 characters in length'
-                }
-            }
+            // validate: {
+            //     len: {
+            //         args: [3, 30],
+            //         msg: 'Display name must be between 3 and 30 characters in length'
+            //     }
+            // }
         },
         email: {
             type: DataTypes.STRING,
             allowNull: true,
-            validate: {
-                isEmail: true
-            }
+            // validate: {
+            //     isEmail: true
+            // }
         },
         password: {
             type: DataTypes.STRING,
