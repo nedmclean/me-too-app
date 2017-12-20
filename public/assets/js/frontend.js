@@ -36,21 +36,20 @@ console.log($this);
 
 })
 
- // complete
-function getForumPost() {
-  alert("I was called")
-}
-
+$("#send").click(function(e) {
+  alert('clicked')
+})
 function getForum() {
   $.ajax({
     method: "GET",
-    url: "/forum/",
+    url: "/posts/",
   })
   .done(function(forums) {
     for (var i = 0; i<forums.length; i++) {
-      $("#forum").prepend("<div class ='forumTitles' id='"+forums[i].id+"'>" + forums[i].title+ "</div>")
+      console.log(forums)
+      $("#forum").prepend("<div class ='forumTitles' id='"+forums[i].id+"'>" + forums[i].body+ "</div>")
 
-    }cd 
+    }
   })
 }
 getForum()
