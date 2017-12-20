@@ -3,17 +3,24 @@ module.exports = {
       // Add altering commands here.
       // Return a promise to correctly handle asynchronicity.
     return queryInterface.bulkInsert('Posts', [{
-      username: "Sabrina",
-      body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      username: "intern",
+      body: "this creepy supervisor grabbed me from behind...", 
       // ForumId: 1,
-      location: "nwiofnosfn",
+      location: "Los Angeles",
       createdAt: Sequelize.fn(('NOW')),
       updatedAt: Sequelize.fn(('NOW'))
     }, {
-      username: "Catherine",
-      body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      username: "Leave Me Alone",
+      body: "Married boss keeps asking me out on dates", 
       // ForumId: 1,
-      location: "nwiofnosfn",
+      location: "New York",
+      createdAt: Sequelize.fn(('NOW')),
+      updatedAt: Sequelize.fn(('NOW'))
+    }, {
+      username: "Katie",
+      body: "started as lewd remarks, just now he tried to masturbate in front of me",
+      // ForumId: 1,
+      location: "Chicago",
       createdAt: Sequelize.fn(('NOW')),
       updatedAt: Sequelize.fn(('NOW'))
     }], {});
@@ -25,3 +32,4 @@ module.exports = {
     return queryInterface.bulkDelete('Posts', null, {});
   }
 };
+
