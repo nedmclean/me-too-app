@@ -1,5 +1,6 @@
 var model = require('../models')
 var Forum = model.Forum;
+var Post = model.Post;
 
 module.exports = {
   createForum(req, res) {
@@ -42,6 +43,16 @@ module.exports = {
     })
     .catch(error => {
       console.log(error)
+    })
+  },
+  getForumPost(req, res){
+    return Post 
+    .findAll({
+      where: {
+        forumId: req.params.id
+      }
+    }).then(post => {
+      res.status(200).send(post)
     })
   }
 }
