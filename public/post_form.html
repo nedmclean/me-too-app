@@ -24,22 +24,22 @@
 
 <!--Contact Form -->
 <div id="contactdiv">
-<form class="form" action="#" id="contact">
+<form class="form" action="/post" method="POST" id="contact">
 <img src="images/button_cancel.png" class="img" id="cancel"/>
 <h3>Story Form</h3>
 <hr/><br/>
 <label>Name: <span>*</span></label>
 <br/>
-<input type="text" id="name" placeholder="Name"/><br/>
+<input type="text" name="username" id="name" placeholder="Name"/><br/>
 <br/>
 
 <br/>
 <label>Your Story</label>
 <br/>
-<textarea id="message" placeholder="Message......."></textarea><br/>
+<textarea name="body" id="message" placeholder="Message......."></textarea><br/>
 <br/>
-<input type="button" id="send" value="Send"/>
-<input type="button" id="cancel" value="Cancel"/>
+<button type="submit" id="send">SEND</button>
+<button type="cancel" id="cancel">CANCEL</button>
 <br/>
 </form>
 </div>

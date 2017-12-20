@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
         msg: 'Must have maximum of 500 characters'
       }
     }
-  }, 
+  }
   //   location: {
   //     type: DataTypes.STRING,
   //   allowNull: true
@@ -40,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
   // //         allowNull: false
   // //       });
   // //     }
-    }
+    
   });
   return Post;
 };
