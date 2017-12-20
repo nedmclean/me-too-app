@@ -23,23 +23,23 @@ module.exports = (sequelize, DataTypes) => {
       }
     }
   }, 
-    location: {
-      type: DataTypes.STRING,
-    allowNull: true
-  }, 
-    approved: {
-    type: DataTypes.BOOLEAN,
-    defaultValue: false
-  }
-  },{
-    classMethods: {
-      associate: function (models) {
-        // associations can be defined here
-        Post.belongsTo(models.Forum, {
-          foreignkey: { allowNull: true },
-          allowNull: false
-        });
-      }
+  //   location: {
+  //     type: DataTypes.STRING,
+  //   allowNull: true
+  // // }, 
+  // //   approved: {
+  // //   type: DataTypes.BOOLEAN,
+  // //   defaultValue: false
+  // // }
+  // // },{
+  // //   classMethods: {
+  // //     associate: function (models) {
+  // //       // associations can be defined here
+  // //       Post.belongsTo(models.Forum, {
+  // //         foreignkey: { allowNull: true },
+  // //         allowNull: false
+  // //       });
+  // //     }
     }
   });
   return Post;
