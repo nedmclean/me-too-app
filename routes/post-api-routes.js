@@ -15,6 +15,7 @@ module.exports = (app) => {
 // post controllers
   app.post('/post', postController.createPost)
   app.put('/post/:id', postController.updatePost)
+  app.get('/getPostById/:id', postController.getPostById)
   app.get('/posts', postController.getAllPost)
   app.delete('/post/:id', postController.deletePost)
   app.get('postall/:id', postController.getAllPostByForum)
@@ -22,7 +23,8 @@ module.exports = (app) => {
 // forum controllers
   app.post('/forum', forumController.createForum)
   app.get('/forum', forumController.getAllForum)
-  app.delete('/forum/:id', forumController.deleteForum) 
+  app.delete('/forum/:id', forumController.deleteForum)
+  app.get('/forum/:id/post', forumController.getForumPost)
 
 
   app.post('/post', postController.createPost )
