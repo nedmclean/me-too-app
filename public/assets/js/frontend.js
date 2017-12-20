@@ -4,36 +4,53 @@ $(document).ready(function() {
 
 var posts = $("#posts");
 
-function getPosts(category) {
-// var title = posts[i].title;
-// var user_id = posts[i].id;
-// var description = posts[i].description;
+$('#forum').on('click', '.forumTitles', function(){ 
 
- $.ajax({
+var $this = $(this)
+console.log($this);
+ 
+  $.ajax({
       method: "GET",
       url: "/posts/"
     })
     .done(function(posts) {
     
-    console.log(posts);
+      console.log(posts, "hey you");
+
+      for(var i = 0; i < posts.length; i++){
 
 
+          var username = posts[i].username;
+          var body = posts[i].body;
+          var id = posts[i].id;
 
-for(var i = 0; i < posts.length; i++){
+          // create the links using the a href tags
+          $('#fullPost').prepend("<div class='postTitles' id="+username+"><a href = '/post/"+id+ "'></href><p class='description'>"+body+"</p></div>");	
+          	
+      	};
+  });
 
-var username = posts[i].username;
-var body = posts[i].body;
-var id = posts[i].id;
+})
 
-// create the links using the a href tags
-$('#posts').prepend("<div class='postTitles' id="+username+"><a href = '/post/"+id+ "'></href><p class='description'>"+body+"</p></div>");	
-	
-	};
- });
+ // complete
+function getForumPost() {
+  alert("I was called")
+}
 
+function getForum() {
+  $.ajax({
+    method: "GET",
+    url: "/forum/",
+  })
+  .done(function(forums) {
+    for (var i = 0; i<forums.length; i++) {
+      $("#forum").prepend("<div class ='forumTitles' id='"+forums[i].id+"'>" + forums[i].title+ "</div>")
 
-  };
-getPosts();
+    }
+  })
+}
+getForum()
+
 
 
 

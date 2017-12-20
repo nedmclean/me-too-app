@@ -2,7 +2,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
     var Forum = sequelize.define('Forum', {
-        name: {
+        title: {
             type: DataTypes.STRING,
             allowNull: false
 

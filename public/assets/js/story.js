@@ -5,7 +5,7 @@ $("#logindiv").css("display", "block");
 }
 $("#login #cancel").click(function() {
 $(this).parent().parent().parent().hide();
-	window.location.href = 'about.html'
+	
 
 });
 $("#onclick").click(function() {

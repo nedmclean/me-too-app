@@ -18,12 +18,19 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/start.html"));
   });
 
-  // cms route loads cms.html
+  app.get("/post/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/post.html"));
+  });
+
+// cms route loads cms.html
   app.get("/post/:id", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/post.html"));
   });
 
-  
+
+  app.get("/share", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/post_form.html"));
+  });
 
   // blog route loads blog.html
   app.get("/about", function(req, res) {

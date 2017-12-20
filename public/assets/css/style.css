@@ -1,0 +1,157 @@
+/*for the buttons on the index.html page*/
+#about{
+float:right;
+margin-top:550px;
+margin-right:75px;
+width:200px;
+font-size:30px;
+background-color: rgba(0, 0, 0, 0);
+ 
+}
+
+#enter{
+float:right;
+margin-top:550px;
+margin-left:150px;
+width:200px;
+font-size:30px;
+background-color: rgba(0, 0, 0, 0);
+}
+/*index.html ends here*/
+
+
+
+
+/*This section is for about and index (home) page*/
+img {
+    border: 0;
+    width: 100%;
+}
+
+#aboutContainer {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.row .col.s4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.row .col {
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+}
+/*3rd column containing Time Magazine text and pictures*/
+#col-s4a{
+    font-family: "Times New Roman", Times, serif;
+    width: 33.3333333333%;
+    margin-left: 0px;
+   
+    right: auto; 
+    left: auto;
+    min-height: 1px;
+}
+
+#time{
+/*    margin-right: 10px;*/
+    width:450px;
+    height:450px;
+
+}
+
+#tarana{
+
+    width:100%;
+    float:right;
+}
+#home-background {
+background: url("../images/me 2.png");
+background-size: contain;
+background-size: cover;
+background-repeat: no-repeat; 
+background-position: 100% 100%; 
+}
+/*home and about page ends here*/
+
+
+
+/*for all all pages*/
+.nav-wrapper{
+margin-top:5px;
+background-color: #423d77 !important;
+padding-right:100px;
+
+}
+
+#meToo{
+    text-align:center;
+    margin-bottom:-10px;  
+}
+/*there is strength in community*/
+#pgGreeting{
+margin-top:10px;
+background-color:#423d77;
+border:1px solid #ddd;
+color:white;
+text-align:center;
+
+}
+
+/*resource div*/
+#resources{
+border:1px solid #ddd;
+background-color:#dbdde0;
+font-weight:bold;
+}
+
+
+/*map div on start.html*/
+#map{
+text-align:center;
+
+}
+/*This will also hold the geofinder map*/
+#map-img{
+width:100%;
+height:100%;
+margin-right:100px;
+display: block;
+margin: auto;
+/*box-shadow: 10px 10px 5px grey;  */
+
+}
+
+.posts{
+
+padding:20px;
+background-color:#f9f9f9;
+border:1px solid #ddd;
+
+}
+
+.postTitles{
+padding:20px;
+background-color:#f9f9f9;
+border:1px solid #ddd;
+text-align:center;
+font-weight:bold;
+font-size:20px;
+
+}
+
+
+
+#titlePost{
+
+font-size:20px;
+text-align:center;
+
+}
