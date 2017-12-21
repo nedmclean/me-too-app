@@ -49,7 +49,23 @@ img {
     padding: 0 .75rem;
     min-height: 1px;
 }
+/*3rd column containing Time Magazine text and pictures*/
+#col-s4a{
+    font-family: "Times New Roman", Times, serif;
+    width: 33.3333333333%;
+    margin-left: 0px;
+   
+    right: auto; 
+    left: auto;
+    min-height: 1px;
+}
 
+#time{
+/*    margin-right: 10px;*/
+    width:450px;
+    height:450px;
+
+}
 
 #tarana{
 
